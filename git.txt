@@ -1,0 +1,15 @@
+git init
+git add .
+git commit -m "editar"
+git branch -M main
+git remote add origin <link>
+git push -u origin main 
+git fetch origin main:tmp
+git rebase tmp
+git push origin HEAD:main
+
+actualizar:
+
+git add .
+git commit -m "inserte txt"
+git push origin HEAD:main
